@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title1{
+  display: flex;
+  margin: 2.75rem;
+}
+
+.title{
+   margin: 2.75rem;
+}
+
+.main-container{
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(30px);
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  
+}
+
+.city-input{
+  width: 100%;
+  padding: 10px 16px; 
+  border-radius: 99px;
+  border: 1px solid transparent;
+  background: rgb(0,0,0,0.15);
+  outline: none;
+  font-weight: 500;
+  transition: 0.25s border;
+  padding-right: 45px;
+}
+
+.city-input::placeholder{
+  color: rgb(255,255,255,0.75);
+  text-transform: capitalize;
+}
+
+.city-input:focus{
+  border: 3px solid rgb(0,0,0,0.15);
+}
+
+.input-container{
+  position: relative;
+  margin-bottom: 25px;
+}
+.search-btn{
+   position: absolute;
+   right: 16px;
+   top: 50%;
+   transform: translateY(-50%);
+   background: none;
+   display: flex;
+   border: none;
+   cursor: pointer;
+}
+
+.location-date-container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.regular-txt{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.weather-info{
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.weather-summary-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-summary-img{
+  width: 120px;
+  height: 120px;
+}
+
+.weather-summary-info{
+  text-align: end;
+}
+
+.weather-condition-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.condition-item{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.condition-item span{
+  font-size: 30px;
+}
+
+.section-messege{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.section-messege img{
+    height: 150px;
+    width: fit-content;
+
+}
+  
